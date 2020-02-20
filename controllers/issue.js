@@ -13,6 +13,9 @@ issueRouter.get('/', (req, res)=> {
     });
 });
 
+issueRouter.get('/new', (req, res)=>{
+    res.render('issues/newIssueForm')
+})
 issueRouter.get('/:issueId', (req, res)=>{
     issueSchema.findById(req.params.id).then((issue)=>{
         console.log(issue)
@@ -21,6 +24,21 @@ issueRouter.get('/:issueId', (req, res)=>{
 });
 
 
+
+
+issueRouter.post('/new', (req, res)=>{
+    issueSchema.create(req.body).then(()=>{
+        res.redirect('/')
+    });
+});
+
+
+
+issueRouter.get('/:issueID/edit', (req, res)=>{
+    issueSchema.findById(req.params.id).then((issue)=>{
+        res.render('issues/newIssueForm', { issue })
+    });
+});
 
 
 

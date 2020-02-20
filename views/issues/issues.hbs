@@ -1,5 +1,7 @@
 {{#each issues}}
-<h3><a href="{{ id }}">{{ description }}</a></h3>
+<h3><a href="/issues/{{ issue.id }}">{{ description }}</a></h3>
 <p>{{ createdAt }}</p>
 
 {{/each}}
+
+<a href="/new">New Issue?</a>
