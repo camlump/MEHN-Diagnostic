@@ -38,6 +38,13 @@ issueRouter.get('/:id/edit', (req, res)=>{
 });
 
 
+issueRouter.delete('/:id', (req, res)=>{
+    issueSchema.findByIdAndDelete(req.params.id).then(()=>{
+        res.redirect('/')
+    })
+})
+
+
 
 
 
