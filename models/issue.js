@@ -11,7 +11,7 @@ const issueSchema  = new Schema({
 
     status: String,
 
-    priority: String
+    priority: String,
 })
 
 module.exports = mongoose.model('issueSchema', issueSchema)

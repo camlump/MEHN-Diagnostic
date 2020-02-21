@@ -1,3 +1,5 @@
+
+<main>
 <h2>Current issue </h2>
 
 <h3>Description:</h3>
@@ -14,9 +16,11 @@
 
 
 
-
+<a href="/{{issue.id}}/edit">Edit Issue</a>
 
 <form action="/issues/{{ issue.id }}?_method=DELETE" method="POST">
 <input type="submit" value="Delete issue">
 
 </form>
+
+</main>

@@ -17,7 +17,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const issueRouter = require('./controllers/issue.js')
+const issueRouter = require('./controllers/issue.js');
 
 
 /* Step 3

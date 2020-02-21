@@ -1,8 +1,11 @@
-<form action="/issues" action="POST">
-description: <input type="text" name="description" value="{{ issue.description}}" placeholder="description">
-created at:  <input type="text" name="description" value="{{ issue.createdAt}}" placeholder="Date">
-status: <input type="text" name="status" value="{{ issue.status }}" placeholder="status">
-priority: <input type="text" name="priority" value="{{ issue.priority}}" placeholder="priority">
+<h2>Create new issue here</h2>
+
+<form action="/" method="POST">
+description: <input type="text" name="description" placeholder="description"><br><br>
+created at:  <input type="text" name="createdAt"  placeholder="Date"><br><br>
+status: <input type="text" name="status"  placeholder="status"><br><br>
+priority: <input type="text" name="priority"  placeholder="priority"><br><br>
+<input type="submit" value="Add issue">
 
 
 <a href="/">Return home</a>

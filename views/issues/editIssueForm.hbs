@@ -1,0 +1,17 @@
+
+<h2>Edit form here</h2>
+
+<form action="/{{ issue.id }}?_method=PUT" method="POST">
+description: <input type="text" name="description" value="{{ issue.description}}" placeholder="description"><br><br>
+created at:  <input type="text" name="description" value="{{ issue.createdAt}}" placeholder="Date"><br><br>
+status: <input type="text" name="status" value="{{ issue.status }}" placeholder="status"><br><br>
+priority: <input type="text" name="priority" value="{{ issue.priority}}" placeholder="priority"><br><br>
+<input type="submit" value="Edit issue">
+
+
+<a href="/">Return home</a>
+
+
+
+
+</form>
