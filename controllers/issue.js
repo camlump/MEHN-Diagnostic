@@ -45,12 +45,6 @@ issueRouter.delete('/:id', (req, res)=>{
 })
 
 
-
-
-
-
-
-
 issueRouter.put('/:id', (req, res)=>{
     issueSchema.findByIdAndUpdate(req.params.id, req.body).then(issue=>{
         res.redirect('/' + issue.id);
